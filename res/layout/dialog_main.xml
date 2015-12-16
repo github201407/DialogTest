@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:onClick="photo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="alert"
+        android:text="普通对话框" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="alertList"
+        android:text="列表对话框" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="date"
+        android:text="日期对话框" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+        android:text="自定义登录对话框" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateInfo"
+        android:text="自定义更新信息对话框" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载对话框" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="diyProgress"
+        android:text="自定义滚动条-样式" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/button"
+        android:background="@drawable/shape_test"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        android:text="65%"
+        android:textSize="30sp"
+        android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/android_button"
+        android:text="Button" />
+    
+    
+
+</LinearLayout>

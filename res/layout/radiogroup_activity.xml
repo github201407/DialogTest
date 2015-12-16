@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_day"
+            style="@style/my_radiobtn_style"
+            android:text="@string/search_today" />
+
+        <RadioButton
+            android:id="@+id/radio_1week"
+            style="@style/my_radiobtn_style"
+            android:text="@string/search_1week" />
+
+        <RadioButton
+            android:id="@+id/radio_1month"
+            style="@style/my_radiobtn_style"
+            android:checked="true"
+            android:text="@string/search_1month" />
+
+        <RadioButton
+            android:id="@+id/radio_3month"
+            style="@style/my_radiobtn_style"
+            android:text="@string/search_3month" />
+
+        <RadioButton
+            android:id="@+id/radio_all"
+            style="@style/my_radiobtn_style"
+            android:text="@string/search_all" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/radio_group_shape"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <RadioButton
+            android:id="@+id/msg_state"
+            style="@style/my_radiobtn_style2"
+            android:background="@drawable/radiobtn_selector_left"
+            android:checked="true"
+            android:text="@string/msg_state" />
+
+        <RadioButton
+            android:id="@+id/msg_center"
+            style="@style/my_radiobtn_style2"
+            android:background="@drawable/radiobtn_selector_center"
+            android:text="@string/msg_center" />
+
+        <RadioButton
+            android:id="@+id/msg_warn"
+            style="@style/my_radiobtn_style2"
+            android:background="@drawable/radiobtn_selector_right"
+            android:text="@string/msg_warn" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#19db8a" >
+    </LinearLayout>
+    <include layout="@layout/bottom_menu_layout_radiobutton" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#19db8a" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp" >
+
+    <TextView
+        android:id="@+id/info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/info_title"
+        android:layout_below="@+id/info_title"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/info_title"
+        android:layout_below="@+id/info_version"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/info_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/info_title"
+        android:layout_below="@+id/info_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_line"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/info_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_diy_button_ok"
+            android:text="马上更新"
+            android:textColorHighlight="#99cc00"
+            android:textColor="@drawable/dialog_diy_textcolor_w2g"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/info_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+             android:textColorHighlight="@android:color/black"
+            android:background="@drawable/dialog_diy_button_cancel"
+            android:textColor="@drawable/dialog_diy_textcolor_b2w"
+            android:text="稍后再说"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

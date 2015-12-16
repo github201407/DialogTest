@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tv_homepage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/menu_homepage_img_selector"
+            android:gravity="center"
+            android:text="@string/menu_homepage"
+            android:textColor="@drawable/tab_font_selector"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/tv_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="true"
+            android:drawableTop="@drawable/menu_mine_img_selector"
+            android:gravity="center"
+            android:text="@string/menu_mine"
+            android:textColor="@drawable/tab_font_selector"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/menu_add"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/tv_check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="true"
+            android:drawableTop="@drawable/menu_search_img_selector"
+            android:gravity="center"
+            android:text="@string/menu_serach"
+            android:textColor="@drawable/tab_font_selector"
+            android:textSize="15sp" />
+
+        <!--
+             <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >        -->
+
+        <RadioButton
+            android:id="@+id/tv_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="true"
+            android:drawableTop="@drawable/menu_message_img_selector"
+            android:gravity="center"
+            android:text="@string/menu_message"
+            android:textColor="@drawable/tab_font_selector"
+            android:textSize="15sp" />
+
+        <!--
+        <TextView
+                android:id="@+id/tv_msg_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/msg_number"
+                android:clickable="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </FrameLayout>        -->
+    </RadioGroup>
+
+</LinearLayout>
